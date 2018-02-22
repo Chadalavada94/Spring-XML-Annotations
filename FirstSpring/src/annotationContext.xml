@@ -7,10 +7,16 @@
     http://www.springframework.org/schema/context
     http://www.springframework.org/schema/context/spring-context.xsd">
 
-	<!-- add entry to enable component scanning -->
-
-<context:component-scan base-package="com.love2code"></context:component-scan>
-	</beans>
+    <!-- Define your beans here -->
+    
+    <bean id="myFortune" class="com.ram.spring.HappyFortuneService">
+    </bean>
+    <bean id="myCoach"
+     class="com.ram.spring.Football">
+     <constructor-arg ref="myFortune" />
+    
+    </bean>
+</beans>
 
 
 

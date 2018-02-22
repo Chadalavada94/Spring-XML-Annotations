@@ -8,5 +8,11 @@ public class Football implements Coach {
 		return "keep practicing the leg movements";
 	}
 
+	@Override
+	public String getDailyFortune() {
+		
+		return null;
+	}
+
 
 }

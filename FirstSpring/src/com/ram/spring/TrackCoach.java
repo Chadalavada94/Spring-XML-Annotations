@@ -7,4 +7,10 @@ public class TrackCoach implements Coach {
 		return "run one hour to workout";
 	}
 
+	@Override
+	public String getDailyFortune() {
+		
+		return null;
+	}
+
 }
